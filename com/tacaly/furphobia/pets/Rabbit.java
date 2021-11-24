@@ -6,7 +6,7 @@ import com.tacaly.furphobia.pets.stats.*;
 
 public class Rabbit extends Pet {
 	public Rabbit(String name){
-		super(name, "Rabbit", null, null, null, null, true, false);
+		super(name, "Rabbit");
 		setPosition(new Position(100, 100));
 		
 		// animation stuff
