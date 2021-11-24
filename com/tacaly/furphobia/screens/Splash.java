@@ -3,6 +3,7 @@ package com.tacaly.furphobia.screens;
 import com.tacaly.furphobia.Image;
 import com.tacaly.furphobia.Screen;
 import com.tacaly.furphobia.FurComponent;
+import com.tacaly.furphobia.pets.Rabbit;
 
 import java.awt.image.BufferedImage;
 import java.awt.Graphics2D;
@@ -17,34 +18,17 @@ public class Splash implements Screen{
 		this.component = component;
 	}
 	
+	Rabbit rabbit;
 	public void init(){
-		this.img = Image.fromFile("com\\tacaly\\furphobia\\res\\placeholder.png");
-		this.x = 0;
-		this.y = 0;
-		this.w = 50;
-		this.h = 50;
-		this.dx = 3;
-		this.dy = 3;
+		rabbit = new Rabbit("bun");
 	}
 	
 	public void tick(){
-		x += dx;
-		y += dy;
-		if(x < 0 && dx < 0 || x+w > component.getWidth() && dx > 0){
-			dx *= -1;
-		}
-		if(y < 0 && dy < 0 || y+h > component.getHeight() && dy > 0){
-			dy *= -1;
-		}
+		rabbit.tick();
 	}
 	public void render(Graphics2D g){
-		g.clearRect(0, 0, component.getWidth(), component.getHeight()); // remember to delete, use another method
-		g.drawImage(
-			img,
-			x, y,
-			w, h,
-			null
-		);
+		g.clearRect(0, 0, component.getWidth(), component.getHeight());
+		rabbit.draw(g);
 	}
 	
 	public void keyDownHandler(int e){}
