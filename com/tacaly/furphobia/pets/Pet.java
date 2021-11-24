@@ -14,18 +14,18 @@ public abstract class Pet{
 	private boolean isVisible, flying;
 	private int affection;
 	
-	public Pet(String name, String species, Position position, Animation animation, Health health, Hunger hunger, boolean isVisible, boolean flying){
+	public Pet(String name, String species){
 		this.name = name;
 		this.species = species;
-		this.current_position = position;
-		this.to_position = position;
-		this.animation = animation;
+		this.current_position = null;
+		this.to_position = null;
+		this.animation = null;
 		
-		this.health = health;
-		this.hunger = hunger;
+		this.health = null;
+		this.hunger = null;
 		
-		this.isVisible = isVisible;
-		this.flying = flying;
+		this.isVisible = true;
+		this.flying = false;
 		this.affection = 10;
 	}
 	
