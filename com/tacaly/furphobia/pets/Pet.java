@@ -1,6 +1,5 @@
 package com.tacaly.furphobia.pets;
 
-// contains Animation, Position, Health and Hunger.java
 import com.tacaly.furphobia.pets.stats.*;
 
 import java.awt.Graphics2D;
