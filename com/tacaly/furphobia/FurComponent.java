@@ -108,7 +108,7 @@ public class FurComponent extends JComponent implements Runnable, KeyListener, F
 	@Override
 	public void keyPressed(KeyEvent e){
 		if(e.getKeyCode() == KeyEvent.VK_ESCAPE){
-			System.exit(1);
+			System.exit(1);	
 		}
 		screen.keyDownHandler(e.getKeyCode());
 	}

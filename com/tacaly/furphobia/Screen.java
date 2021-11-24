@@ -10,5 +10,4 @@ public interface Screen{
 	
 	public void keyDownHandler(int e);
 	public void keyUpHandler(int e);
-	
 }
