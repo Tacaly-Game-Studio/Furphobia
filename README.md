@@ -1,8 +1,9 @@
 # Furphobia
 
 ## Gameplay
+Furphobia is a game for people with fear for animals.
 The game centers around the animal phobia and is made to help people with they fear and to inprove self-control. 
-The game is controled by the user and the game does not include any animals the user does not agree with.
+It is controled by the user and the game does not include any animals the user does not agree with.
 
 ## Building the project
 - 'gradle build'
