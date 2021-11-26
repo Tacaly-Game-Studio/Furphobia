@@ -1,0 +1,27 @@
+pets/stats/Position.java
+ com.tacaly.furphobia.pets.stats.Position
+Screen.java
+ com.tacaly.furphobia.Screen
+pets/stats/Health.java
+ com.tacaly.furphobia.pets.stats.Health
+Image.java
+ com.tacaly.furphobia.Image
+pets/stats/Hunger.java
+ com.tacaly.furphobia.pets.stats.Hunger
+screens/Splash.java
+ com.tacaly.furphobia.screens.Splash
+pets/stats/Frame.java
+ com.tacaly.furphobia.pets.stats.Frame
+pets/Pet.java
+ com.tacaly.furphobia.pets.Pet
+pets/stats/Animation.java
+ com.tacaly.furphobia.pets.stats.Animation
+pets/Rabbit.java
+ com.tacaly.furphobia.pets.Rabbit
+FurComponent.java
+ com.tacaly.furphobia.FurComponent
+Main.java
+ com.tacaly.furphobia.Main
+ com.tacaly.furphobia.Main$1
+Window.java
+ com.tacaly.furphobia.Window

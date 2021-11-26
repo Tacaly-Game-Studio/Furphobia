@@ -5,13 +5,26 @@ plugins {
     id 'org.openjfx.javafxplugin' version '0.0.8'
 }
 
-jar.enabled = false
+jar.enabled = true
 
 version = '1.0.9'
 sourceCompatibility = '11'
 
 repositories {
+    mavenCentral()
     jcenter()
+
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ["com/tacaly/furphobia"]
+        }
+        resources {
+            srcDirs = ['com/tacaly/furphobia/resources']
+        }
+    }
 }
 
 configurations {
@@ -49,39 +62,39 @@ dependencies {
     // https://mvnrepository.com/artifact/com.googlecode.soundlibs/tritonus-share
     compile group: 'com.googlecode.soundlibs', name: 'tritonus-share', version: '0.3.7.4'
     // https://mvnrepository.com/artifact/com.googlecode.soundlibs/vorbisspi
-    compile group: 'com.googlecode.soundlibs', name: 'vorbisspi', version: '1.0.3-1'
+    compile group: 'com.googlecode.soundlibs', name: 'vorbisspi', version: '1.0.3.3'
 
-    implementation "org.openjfx:javafx-media:13:${platform}"
-    implementation "org.openjfx:javafx-base:13:${platform}"
-    implementation "org.openjfx:javafx-controls:13:${platform}"
-    implementation "org.openjfx:javafx-fxml:13:${platform}"
-    implementation "org.openjfx:javafx-swing:13:${platform}"
-    implementation "org.openjfx:javafx-web:13:${platform}"
-    implementation "org.openjfx:javafx-graphics:13:${platform}"
+    implementation "org.openjfx:javafx-media:17.0.0.1:${platform}"
+    implementation "org.openjfx:javafx-base:17.0.0.1:${platform}"
+    implementation "org.openjfx:javafx-controls:17.0.0.1:${platform}"
+    implementation "org.openjfx:javafx-fxml:17.0.0.1:${platform}"
+    implementation "org.openjfx:javafx-swing:17.0.0.1:${platform}"
+    implementation "org.openjfx:javafx-web:17.0.0.1:${platform}"
+    implementation "org.openjfx:javafx-graphics:17.0.0.1:${platform}"
 
-    win "org.openjfx:javafx-media:13:win"
-    win "org.openjfx:javafx-base:13:win"
-    win "org.openjfx:javafx-controls:13:win"
-    win "org.openjfx:javafx-fxml:13:win"
-    win "org.openjfx:javafx-swing:13:win"
-    win "org.openjfx:javafx-web:13:win"
-    win "org.openjfx:javafx-graphics:13:win"
+    win 'org.openjfx:javafx-media:17.0.0.1:win'
+    win 'org.openjfx:javafx-base:17.0.0.1:win'
+    win 'org.openjfx:javafx-controls:17.0.0.1:win'
+    win 'org.openjfx:javafx-fxml:17.0.0.1:win'
+    win 'org.openjfx:javafx-swing:17.0.0.1:win'
+    win 'org.openjfx:javafx-web:17.0.0.1:win'
+    win 'org.openjfx:javafx-graphics:17.0.0.1:win'
 
-    linux "org.openjfx:javafx-media:13:linux"
-    linux "org.openjfx:javafx-graphics:13:linux"
-    linux "org.openjfx:javafx-base:13:linux"
-    linux "org.openjfx:javafx-controls:13:linux"
-    linux "org.openjfx:javafx-fxml:13:linux"
-    linux "org.openjfx:javafx-swing:13:linux"
-    linux "org.openjfx:javafx-web:13:linux"
+    linux 'org.openjfx:javafx-media:17.0.0.1:linux'
+    linux 'org.openjfx:javafx-graphics:17.0.0.1:linux'
+    linux 'org.openjfx:javafx-base:17.0.0.1:linux'
+    linux 'org.openjfx:javafx-controls:17.0.0.1:linux'
+    linux 'org.openjfx:javafx-fxml:17.0.0.1:linux'
+    linux 'org.openjfx:javafx-swing:17.0.0.1:linux'
+    linux 'org.openjfx:javafx-web:17.0.0.1:linux'
 
-    mac "org.openjfx:javafx-media:13:mac"
-    mac "org.openjfx:javafx-graphics:13:mac"
-    mac "org.openjfx:javafx-base:13:mac"
-    mac "org.openjfx:javafx-controls:13:mac"
-    mac "org.openjfx:javafx-fxml:13:mac"
-    mac "org.openjfx:javafx-swing:13:mac"
-    mac "org.openjfx:javafx-web:13:mac"
+    mac 'org.openjfx:javafx-media:17.0.0.1:mac'
+    mac 'org.openjfx:javafx-graphics:17.0.0.1:mac'
+    mac 'org.openjfx:javafx-base:17.0.0.1:mac'
+    mac 'org.openjfx:javafx-controls:17.0.0.1:mac'
+    mac 'org.openjfx:javafx-fxml:17.0.0.1:mac'
+    mac 'org.openjfx:javafx-swing:17.0.0.1:mac'
+    mac 'org.openjfx:javafx-web:17.0.0.1:mac'
 }
 
 application {

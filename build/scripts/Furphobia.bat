@@ -67,7 +67,7 @@ goto fail
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\Furphobia-1.0.9.jar;%APP_HOME%\lib\vorbisspi-1.0.3-1.jar;%APP_HOME%\lib\jorbis-0.0.17.4.jar;%APP_HOME%\lib\tritonus-share-0.3.7.4.jar;%APP_HOME%\lib\javafx-web-13-win.jar;%APP_HOME%\lib\javafx-media-13-win.jar;%APP_HOME%\lib\javafx-media-13.jar;%APP_HOME%\lib\javafx-fxml-13-win.jar;%APP_HOME%\lib\javafx-controls-13-win.jar;%APP_HOME%\lib\javafx-controls-13.jar;%APP_HOME%\lib\javafx-swing-13-win.jar;%APP_HOME%\lib\javafx-graphics-13-win.jar;%APP_HOME%\lib\javafx-graphics-13.jar;%APP_HOME%\lib\javafx-base-13-win.jar;%APP_HOME%\lib\javafx-base-13.jar
+set CLASSPATH=%APP_HOME%\lib\Furphobia-1.0.9.jar;%APP_HOME%\lib\vorbisspi-1.0.3.3.jar;%APP_HOME%\lib\jorbis-0.0.17.4.jar;%APP_HOME%\lib\tritonus-share-0.3.7.4.jar;%APP_HOME%\lib\javafx-web-17.0.0.1-win.jar;%APP_HOME%\lib\javafx-media-17.0.0.1-win.jar;%APP_HOME%\lib\javafx-media-17.0.0.1.jar;%APP_HOME%\lib\javafx-fxml-17.0.0.1-win.jar;%APP_HOME%\lib\javafx-controls-17.0.0.1-win.jar;%APP_HOME%\lib\javafx-controls-17.0.0.1.jar;%APP_HOME%\lib\javafx-swing-17.0.0.1-win.jar;%APP_HOME%\lib\javafx-graphics-17.0.0.1-win.jar;%APP_HOME%\lib\javafx-graphics-17.0.0.1.jar;%APP_HOME%\lib\javafx-base-17.0.0.1-win.jar;%APP_HOME%\lib\javafx-base-17.0.0.1.jar
 
 
 @rem Execute Furphobia

@@ -5,7 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a951d7e5-8fae-4f41-ada0-552bcef9ae70" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/tacaly/furphobia/resources/animation_placeholder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/tacaly/furphobia/resources/placeholder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/tacaly/furphobia/resources/sound/menu.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Furphobia.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/Furphobia-1.0.9.tar" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/Furphobia-1.0.9.tar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/scripts/Furphobia" beforeDir="false" afterPath="$PROJECT_DIR$/build/scripts/Furphobia" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/scripts/Furphobia.bat" beforeDir="false" afterPath="$PROJECT_DIR$/build/scripts/Furphobia.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/tacaly/furphobia/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/tacaly/furphobia/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/tacaly/furphobia/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/tacaly/furphobia/Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/tacaly/furphobia/res/animation_placeholder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/tacaly/furphobia/res/placeholder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/tacaly/furphobia/res/sound/menu.mp3" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,13 +83,14 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
@@ -100,6 +126,8 @@
       <updated>1637855525740</updated>
       <workItem from="1637855529144" duration="1786000" />
       <workItem from="1637857410182" duration="635000" />
+      <workItem from="1637859530386" duration="1199000" />
+      <workItem from="1637879103528" duration="2429000" />
     </task>
     <servers />
   </component>
