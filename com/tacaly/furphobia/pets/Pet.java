@@ -1,5 +1,6 @@
 package com.tacaly.furphobia.pets;
 
+// contains Animation, Position, Health and Hunger.java
 import com.tacaly.furphobia.pets.stats.*;
 
 import java.awt.Graphics2D;
@@ -94,5 +95,5 @@ public abstract class Pet{
 	}
 	
 	abstract public void update();
-	abstract public void pet();
+	// abstract public void pet();
 }

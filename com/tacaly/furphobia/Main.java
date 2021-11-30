@@ -1,6 +1,7 @@
 package com.tacaly.furphobia;
 
 import com.tacaly.furphobia.Window;
+import com.tacaly.furphobia.mapgen.MapGen;
 
 public class Main{
 	public Window window;
@@ -13,5 +14,7 @@ public class Main{
 	}
 	public static void main(String [] args){
 		new Main();
+		// MapGen map = new MapGen(10, 10, 5);
+		// map.printMap();
 	}
 }
