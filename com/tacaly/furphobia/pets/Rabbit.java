@@ -28,7 +28,5 @@ public class Rabbit extends Pet {
 	public void update(){
 		
 	}
-	public void pet(){
-		
-	}
+	// public void pet(){}
 }
