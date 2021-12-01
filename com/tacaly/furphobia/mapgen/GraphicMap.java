@@ -13,6 +13,8 @@ public class GraphicMap{
 	private char[][] base_map;
 	private BufferedImage[] tiles;
 	
+	private int wWidth, wHeight;
+	
 	private VolatileImage graphical_map;
 	private Graphics2D graphics;
 	
@@ -20,55 +22,44 @@ public class GraphicMap{
 		this.base_map = map;
 		this.tiles = tiles;
 		
+		// window dimensions
+		this.wWidth = component.getWidth();
+		this.wHeight = component.getHeight();
+		
+		// buffering stuff
 		GraphicsConfiguration gc = component.getGraphicsConfiguration();
-		this.graphical_map = gc.createCompatibleVolatileImage(component.getWidth(), component.getHeight());
-		// this.graphical_map = gc.createCompatibleVolatileImage(100, 100);
+		this.graphical_map = gc.createCompatibleVolatileImage(
+			base_map.length   *tiles[0].getWidth(),
+			base_map[0].length*tiles[0].getHeight()
+		);
 		this.graphics = (Graphics2D) graphical_map.getGraphics();
 		generateMap();
 	}
 	
 	public void draw(Graphics2D g){
-		g.drawImage(graphical_map, 0, 0, null);
+		g.drawImage(graphical_map, 0, 0, wWidth, wHeight, null);
 	}
 	
 	// it'll hardly be a maintainable code, sorry
 	private void generateMap(){
-		// int scaleX = graphical_map.getWidth() / base_map[0].length;
-		int scaleX = 2;
-		// int scaleY = graphical_map.getHeight()/ tiles[0].getHeight();
-		int scaleY = 2;
-		System.out.println(scaleX);
-		
-		int x = 0;
-		while(x < base_map.length){
-			int y = 0;
-			while(y < base_map[x].length){
+		// this shit will eventually get out of hand
+		for(int y=0; y < base_map.length; y++){
+			for(int x=0; x < base_map[y].length; x++){
 				if(base_map[y][x] == 'O'){
-					graphics.drawImage(
-						tiles[0],
-						x*tiles[0].getWidth()*scaleX, y*tiles[0].getHeight()*scaleY,
-						tiles[0].getWidth()*scaleX  , tiles[0].getHeight()*scaleY,
-						null
-					);
+					_draw(x, y, 0);
 				}else if(base_map[y][x] == '.'){
-					graphics.drawImage(
-						tiles[1],
-						x*tiles[1].getWidth()*scaleX, y*tiles[1].getHeight()*scaleY,
-						tiles[1].getWidth()*scaleX  , tiles[1].getHeight()*scaleY,
-						null
-					);
+					_draw(x, y, 1);
 				}else{
-					graphics.drawImage(
-						tiles[2],
-						x*tiles[2].getWidth()*scaleX, y*tiles[2].getHeight()*scaleY,
-						tiles[2].getWidth()*scaleX  , tiles[2].getHeight()*scaleY,
-						null
-					);
+					_draw(x, y, 2);
 				}
-				y++;
 			}
-			x++;
 		}
-		System.out.println("Done drawing");
+	}
+	private void _draw(int x, int y, int n){
+		graphics.drawImage(
+			tiles[n],
+			x*tiles[n].getWidth(), y*tiles[n].getHeight(),
+			null
+		);
 	}
 }
