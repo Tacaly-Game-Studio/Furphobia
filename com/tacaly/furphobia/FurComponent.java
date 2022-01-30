@@ -27,7 +27,7 @@ public class FurComponent extends JComponent implements Runnable, KeyListener, F
 		this.width = width;
 		this.height = height;
 		
-		this.fps = (long) 1000 / 24; // a second divided by fps, java is not particularly a fast language
+		this.fps = (long) 1000 / 24;
 		
 		this.setFocusable(true);
 		this.setEnabled(true);
@@ -62,7 +62,8 @@ public class FurComponent extends JComponent implements Runnable, KeyListener, F
 		long timeStart = 0;
 		long timeTaken = 0;
 		long timeWait = 0;
-		int skipped = 0, fsl = 1;
+		int skipped = 0;
+		final int SKIP_LIMIT = 1;
 		while(running){
 			timeStart = System.currentTimeMillis();
 			screen.tick();
@@ -71,18 +72,19 @@ public class FurComponent extends JComponent implements Runnable, KeyListener, F
 			timeWait = fps - timeTaken;
 			
 			// skips frames whenever necessary
-			if(timeWait > 5 || skipped > fsl){
+			if(timeWait > 5 || skipped > SKIP_LIMIT){
 				skipped = 0;
-				// renders offscreen to increase performance
+				// renders offscreen
 				screen.render(gvi);
-				// renders volatile image on screen
+				// now paints on screen
 				g2d.drawImage(vi, 0, 0, null);
+				
+				timeTaken = timeStart - System.currentTimeMillis();
+				timeWait = fps - timeTaken;
 			}else{
 				System.out.println(timeWait);
-				timeWait = (long) 5;
 				skipped++;
 			}
-			
 			try{
 				Thread.sleep(timeWait);
 			}catch(InterruptedException e){

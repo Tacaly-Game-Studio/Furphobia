@@ -13,7 +13,7 @@ public class Window extends JFrame{
 	public Window (){
 		new JFrame();
 		setTitle("Furphobia");
-		setIconImage(Image.fromFile("com\\tacaly\\furphobia\\res\\placeholder.png"));
+		setIconImage(Image.fromFile("com\\tacaly\\furphobia\\resources\\placeholder.png"));
 		setSize(width, height);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
