@@ -9,3 +9,6 @@ It is controled by the user and the game does not include any animals the user d
 - 'gradle build'
 
 use gradle with jdk 15 and gradle 6.7. In IntelliJ 2021.2.3
+
+### Discord server
+https://discord.gg/cKpENSUZtc
