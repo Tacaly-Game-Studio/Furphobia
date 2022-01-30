@@ -2,6 +2,8 @@ package com.tacaly.furphobia.mapgen;
 
 import com.tacaly.furphobia.pets.stats.Position;
 import com.tacaly.furphobia.FurComponent;
+import com.tacaly.furphobia.Image;
+import com.tacaly.furphobia.mapgen.MapGen;
 
 import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;
@@ -9,49 +11,50 @@ import java.awt.image.VolatileImage;
 import java.awt.image.BufferedImage;
 
 public class GraphicMap{
+	private String PATH = "com\\tacaly\\furphobia\\resources\\";
 	
-	private char[][] base_map;
+	private MapGen map;
+	private BufferedImage img;
 	private BufferedImage[] tiles;
 	
-	private int wWidth, wHeight;
+	private FurComponent component;
 	
 	private VolatileImage graphical_map;
 	private Graphics2D graphics;
 	
-	public GraphicMap(char[][] map, BufferedImage[] tiles, FurComponent component){
-		this.base_map = map;
-		this.tiles = tiles;
+	public GraphicMap(MapGen map, FurComponent component){
+		this.map = map;
+		this.img = new BufferedImage(map.getMap()[0].length, map.getMap().length, BufferedImage.TYPE_INT_RGB);
+		this.tiles = new BufferedImage[]{
+			Image.fromFile(PATH+"waypoint.png"),
+			Image.fromFile(PATH+"path.png"),
+			Image.fromFile(PATH+"sea.png"),
+			Image.fromFile(PATH+"field.png"),
+			Image.fromFile(PATH+"mountain.png")
+		};
 		
-		// window dimensions
-		this.wWidth = component.getWidth();
-		this.wHeight = component.getHeight();
+		this.component = component;
 		
-		// buffering stuff
-		GraphicsConfiguration gc = component.getGraphicsConfiguration();
-		this.graphical_map = gc.createCompatibleVolatileImage(
-			base_map.length   *tiles[0].getWidth(),
-			base_map[0].length*tiles[0].getHeight()
-		);
-		this.graphics = (Graphics2D) graphical_map.getGraphics();
-		generateMap();
+		paintMap();
 	}
 	
 	public void draw(Graphics2D g){
-		g.drawImage(graphical_map, 0, 0, wWidth, wHeight, null);
+		g.drawImage(
+			img,
+			0, 0,
+			component.getWidth(), component.getHeight(),
+			null
+		);
 	}
 	
-	// it'll hardly be a maintainable code, sorry
-	private void generateMap(){
-		// this shit will eventually get out of hand
-		for(int y=0; y < base_map.length; y++){
-			for(int x=0; x < base_map[y].length; x++){
-				if(base_map[y][x] == 'O'){
-					_draw(x, y, 0);
-				}else if(base_map[y][x] == '.'){
-					_draw(x, y, 1);
-				}else{
-					_draw(x, y, 2);
-				}
+	private void paintMap(){
+		int color = 0x00_00_00;
+		for(int y=0; y < map.getMap().length; y++){
+			for(int x=0; x < map.getMap()[y].length; x++){
+				color =  (int) (map.getMap()[y][x] * 0xff) << 16;
+				color += (int) (map.getMap()[y][x] * 0xff) << 8;
+				color += (int) (map.getMap()[y][x] * 0xff);
+				img.setRGB(x, y, color);
 			}
 		}
 	}

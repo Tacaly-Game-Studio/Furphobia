@@ -15,7 +15,7 @@ public class Image{
 			// creates path to file and loads it as an image
 			sprite = ImageIO.read( new File(path) );
 		}catch (IOException e){
-			System.err.print("image not found:\n\t>" + path + "\0");
+			System.err.print("image not found:\n\t>" + path + "\n");
 		}
 		return sprite;
 	}
