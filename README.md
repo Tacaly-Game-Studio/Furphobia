@@ -3,7 +3,10 @@
 ## Gameplay
 Furphobia is a game for people with fear for animals.
 The game centers around the animal phobia and is made to help people with they fear and to inprove self-control. 
-It is controled by the user and the game does not include any animals the user does not agree with.
+It is controled by the user and the game does not include any animals the user does not agree with. 
+
+### Game Seed with hash
+The game gets a seed from the LL blockchain, the blockchain is centralized and has NOTHING to do with money. It's purpose is to generate a seed for games. Nothing else! src: block.lillelink.com/chain
 
 ## Building the project
 - 'gradle build'
