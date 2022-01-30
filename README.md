@@ -6,7 +6,7 @@ The game centers around the animal phobia and is made to help people with they f
 It is controled by the user and the game does not include any animals the user does not agree with. 
 
 ### Game Seed with hash
-The game gets a seed from the LL blockchain, the blockchain is centralized and has NOTHING to do with money. It's purpose is to generate a seed for games. Nothing else! src: block.lillelink.com/chain
+The game gets a seed from the LL blockchain, the blockchain is centralized and has NOTHING to do with money. It's purpose is to generate a seed for games. Nothing else! src: http://block.lillelink.com/chain
 
 ## Building the project
 - 'gradle build'
