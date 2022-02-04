@@ -4,29 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a951d7e5-8fae-4f41-ada0-552bcef9ae70" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/com/tacaly/furphobia/resources/map/map_tiles.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/tacaly/furphobia/resources/sound/Fire.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/tacaly/furphobia/resources/sound/attack/claw.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/tacaly/furphobia/resources/sound/attack/fireball.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/tacaly/furphobia/resources/sound/attack/slash.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/tacaly/furphobia/resources/sound/death.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/tacaly/furphobia/resources/sound/heal.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/tacaly/furphobia/resources/sound/hit.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/tacaly/furphobia/resources/sound/main.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/tacaly/furphobia/resources/sound/sword.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/tacaly/furphobia/screens/MainMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/tacaly/furphobia/seed/SeedGen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/tacaly/furphobia/res/map_tiles.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/tacaly/furphobia/screens/Splash.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/tacaly/furphobia/screens/Splash.java" afterDir="false" />
-    </list>
+    <list default="true" id="a951d7e5-8fae-4f41-ada0-552bcef9ae70" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -167,7 +145,7 @@
       <workItem from="1637859530386" duration="1199000" />
       <workItem from="1637879103528" duration="2639000" />
       <workItem from="1643993468401" duration="2675000" />
-      <workItem from="1643996419066" duration="1231000" />
+      <workItem from="1643996419066" duration="2027000" />
     </task>
     <servers />
   </component>
