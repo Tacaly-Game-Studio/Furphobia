@@ -2,7 +2,6 @@ package com.tacaly.furphobia.screens;
 
 import com.tacaly.furphobia.mapgen.MapGen;
 import com.tacaly.furphobia.mapgen.GraphicMap;
-import com.tacaly.furphobia.Image;
 
 import com.tacaly.furphobia.Image;
 import com.tacaly.furphobia.Screen;

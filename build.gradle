@@ -69,29 +69,30 @@ dependencies {
     implementation "org.openjfx:javafx-controls:17.0.0.1:${platform}"
     implementation "org.openjfx:javafx-fxml:17.0.0.1:${platform}"
     implementation "org.openjfx:javafx-swing:17.0.0.1:${platform}"
-    implementation "org.openjfx:javafx-web:17.0.0.1:${platform}"
+    implementation "org.openjfx:javafx-web:17.0.2:${platform}"
     implementation "org.openjfx:javafx-graphics:17.0.0.1:${platform}"
+    implementation 'com.google.code.gson:gson:2.8.9'
 
     win 'org.openjfx:javafx-media:17.0.0.1:win'
     win 'org.openjfx:javafx-base:17.0.0.1:win'
     win 'org.openjfx:javafx-controls:17.0.0.1:win'
     win 'org.openjfx:javafx-fxml:17.0.0.1:win'
-    win 'org.openjfx:javafx-swing:17.0.0.1:win'
+    win 'org.openjfx:javafx-swing:17.0.2:win'
     win 'org.openjfx:javafx-web:17.0.0.1:win'
-    win 'org.openjfx:javafx-graphics:17.0.0.1:win'
+    win 'org.openjfx:javafx-graphics:17.0.2:win'
 
     linux 'org.openjfx:javafx-media:17.0.0.1:linux'
-    linux 'org.openjfx:javafx-graphics:17.0.0.1:linux'
+    linux 'org.openjfx:javafx-graphics:17.0.2:linux'
     linux 'org.openjfx:javafx-base:17.0.0.1:linux'
     linux 'org.openjfx:javafx-controls:17.0.0.1:linux'
-    linux 'org.openjfx:javafx-fxml:17.0.0.1:linux'
+    linux 'org.openjfx:javafx-fxml:17.0.2:linux'
     linux 'org.openjfx:javafx-swing:17.0.0.1:linux'
     linux 'org.openjfx:javafx-web:17.0.0.1:linux'
 
     mac 'org.openjfx:javafx-media:17.0.0.1:mac'
-    mac 'org.openjfx:javafx-graphics:17.0.0.1:mac'
+    mac 'org.openjfx:javafx-graphics:17.0.2:mac'
     mac 'org.openjfx:javafx-base:17.0.0.1:mac'
-    mac 'org.openjfx:javafx-controls:17.0.0.1:mac'
+    mac 'org.openjfx:javafx-controls:17.0.2:mac'
     mac 'org.openjfx:javafx-fxml:17.0.0.1:mac'
     mac 'org.openjfx:javafx-swing:17.0.0.1:mac'
     mac 'org.openjfx:javafx-web:17.0.0.1:mac'
