@@ -1,5 +1,6 @@
 # Furphobia 🐱‍👤
 [![CodeQL](https://github.com/Tacaly-Game-Studio/Furphobia/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/Tacaly-Game-Studio/Furphobia/actions/workflows/codeql-analysis.yml)
+[![Run Gradle](https://github.com/Tacaly-Game-Studio/Furphobia/actions/workflows/gradle.yml/badge.svg)](https://github.com/Tacaly-Game-Studio/Furphobia/actions/workflows/gradle.yml)
 ## Gameplay
 Furphobia is a game for people with fear for animals.
 The game centers around the animal phobia and is made to help people with they fear and to inprove self-control. 
