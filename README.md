@@ -10,9 +10,10 @@ The game gets a seed from the LL blockchain, the blockchain is centralized and h
 
 ## Building the project or running
 - 'gradle build'
+- 'gradle run'
 
-use gradle "run" with jdk 15 and gradle 6.7. In IntelliJ 2021.2.3
-
+Building/running the project has to be done from the win/macos user dir.
+Gradle "run" with jdk 17 and gradle 7.1. In IntelliJ 2022
 Use "run" instead of "build" to run the project. 
 
 ### Discord server
