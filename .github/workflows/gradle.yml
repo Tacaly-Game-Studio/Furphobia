@@ -10,8 +10,8 @@ jobs:
     - uses: actions/checkout@v2
     - uses: actions/setup-java@v2
       with:
-        distribution: temurin
-        java-version: 11
+        distribution: ubuntu
+        java-version: 17
         
     - name: Make gradlew executable
       run: chmod +x ./build.gradle
