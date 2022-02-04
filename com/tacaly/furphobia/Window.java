@@ -1,7 +1,7 @@
 package com.tacaly.furphobia;
 
 import com.tacaly.furphobia.FurComponent;
-
+import com.tacaly.furphobia.Image;
 import javax.swing.JFrame;
 import java.awt.image.BufferedImage;
 
@@ -13,7 +13,7 @@ public class Window extends JFrame{
 	public Window (){
 		new JFrame();
 		setTitle("Furphobia");
-		setIconImage(Image.fromFile("com\\tacaly\\furphobia\\resources\\placeholder.png"));
+		setIconImage(Image.fromFile("com\\tacaly\\furphobia\\resources\\icon.png"));
 		setSize(width, height);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
